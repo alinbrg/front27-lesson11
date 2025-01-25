@@ -1,0 +1,109 @@
+/* 1200 */
+/* 1024 */
+/* 768 */
+
+/* @media(min-width: 768px){
+tablet
+} */
+
+/* @media(min-width: 1024px){
+laptop
+} */
+
+/* @media(width >= 1024px){
+
+} */
+
+@media (max-width: 1024px) {
+	header {
+		background-color: darkcyan;
+	}
+}
+
+@media (width <= 1024px) {
+	header {
+		background-color: darkcyan;
+	}
+	iframe {
+		width: 100%;
+	}
+	.map-block,
+	.form-block {
+		width: 100%;
+		max-width: unset;
+	}
+	section {
+		padding: 30px 0;
+	}
+}
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+	footer {
+		background-color: darkorange;
+	}
+} */
+
+@media (768px <= width <=1024px) {
+	footer {
+		background-color: darkorange;
+	}
+	.images-wrapper img {
+		height: 400px;
+	}
+}
+
+@media (width <= 768px) {
+	header {
+		background-color: red;
+	}
+	header nav {
+		display: none;
+	}
+	section {
+		padding: 20px 0;
+	}
+
+	/* .contact-info-wrapper {
+		grid-template-columns: 1fr;
+	} */
+	.images-wrapper {
+		grid-template-columns: 1fr;
+	}
+	.images-wrapper img {
+		height: 300px;
+	}
+	.mail,
+	.phone {
+		padding: 0;
+	}
+}
+
+@media print {
+	iframe {
+		display: none;
+	}
+	header,
+	footer {
+		background-color: transparent;
+	}
+	header a,
+	footer {
+		color: black;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	header,
+	footer {
+		background-color: black;
+	}
+	header a,
+	footer {
+		color: white;
+	}
+}
+@media (orientation: landscape) {
+	.images-wrapper img {
+		height: 300px;
+	}
+}
